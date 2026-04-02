@@ -11,7 +11,7 @@
 
 # Dockerfile with multi-stage build
 # Build
-FROM maven as build
+FROM maven AS build
 WORKDIR /opt/shipping
 COPY pom.xml /opt/shipping/
 RUN mvn dependency:resolve
